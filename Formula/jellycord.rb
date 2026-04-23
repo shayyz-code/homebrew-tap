@@ -5,20 +5,20 @@
 class Jellycord < Formula
   desc "CLI chat client for Jellycord"
   homepage "https://github.com/shayyz-code/jellycord"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.4/jellycord_darwin_x86_64.tar.gz"
-      sha256 "9b6bfd1bd099603646e10c967a8412232fd130e076a82d99fe4db17200fb4fe4"
+      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.5/jellycord_darwin_x86_64.tar.gz"
+      sha256 "1fe5126382ac6b02e0e9adda7e864224e22c5855d2a02b6e7a0164682c86b903"
 
       define_method(:install) do
         bin.install "jellycord"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.4/jellycord_darwin_arm64.tar.gz"
-      sha256 "18a2be7788f00bc90da34d905f0fe39c89149c5aeaa310fbe1c8737ffff104b9"
+      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.5/jellycord_darwin_arm64.tar.gz"
+      sha256 "8247b136c5f37c0b46db8aeb0440a3b5c43e8281ab27f4538df6c704f5d5986b"
 
       define_method(:install) do
         bin.install "jellycord"
@@ -28,15 +28,15 @@ class Jellycord < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.4/jellycord_linux_x86_64.tar.gz"
-      sha256 "d179f6f2d2e36eaef658e58e432faf0c5cf6fe005061d5bf26105d6003541c0e"
+      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.5/jellycord_linux_x86_64.tar.gz"
+      sha256 "591eaaf4d0a436dc18cdf17e082732d7ff31a6f6bc4068e915bab9f0748f8b80"
       define_method(:install) do
         bin.install "jellycord"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.4/jellycord_linux_arm64.tar.gz"
-      sha256 "119e449b378bd4b467e0fdfba2bc78c28098213f216c7a407639c87dd0b4c249"
+      url "https://github.com/shayyz-code/jellycord/releases/download/v0.1.5/jellycord_linux_arm64.tar.gz"
+      sha256 "207645fa1978167d4d293cc45002a12fe81a0552c83d9a7c7ea827cd5dfc78c6"
       define_method(:install) do
         bin.install "jellycord"
       end
