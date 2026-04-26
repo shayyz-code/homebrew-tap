@@ -1,25 +1,25 @@
 class Poo < Formula
   desc "Tiny interpreted language written in Rust"
   homepage "https://github.com/shayyz-code/poolang"
-  version "0.1.5"
+  version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.5/poo-aarch64-apple-darwin.tar.xz"
-      sha256 "5871ce1f87613fb577d3dbd4ee4e72efd98546a55a6033e9f129be8f0fe20f29"
+      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.7/poo-aarch64-apple-darwin.tar.xz"
+      sha256 "89049a22ec7345451c818532265381bb98b1bf91a6d1fee1ac5d54048ee25081"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.5/poo-x86_64-apple-darwin.tar.xz"
-      sha256 "d81149d6a1400aa5d71446a16581ce7fd071c81a13f4a8b15182d542769964b2"
+      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.7/poo-x86_64-apple-darwin.tar.xz"
+      sha256 "6f024fedab1695816651352101f4bd75886f1832bee77316bce9a7419d1d2c6e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.5/poo-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3bb4e613469a0424e3d6646d8cd3921cc87fa3e76d83dfa832c787a0e61ae7c0"
+      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.7/poo-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f32f679deca8a001cf7776dc0dc62012e73407cd00726fa07277bdc40b0d2127"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.5/poo-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8deff8d56dfa286dff91c39f64be0999cbde6401512cc79634534bd604f16ae8"
+      url "https://github.com/shayyz-code/poolang/releases/download/v0.1.7/poo-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3960f973216c169eae2b1f5fac872ae76448f347da8c6e7d1944614e628eda5d"
     end
   end
   license "MIT"
