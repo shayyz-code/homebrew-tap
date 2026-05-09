@@ -5,21 +5,21 @@
 class JsonFirestoreSeed < Formula
   desc "Seed Firestore with JSON data easily."
   homepage "https://github.com/shayyz-code/json-firestore-seed"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shayyz-code/json-firestore-seed/releases/download/v0.1.7/json-firestore-seed_0.1.7_darwin_amd64.tar.gz"
-      sha256 "e48d7f9f7a9f133035ef2106871af389850a790a9620be8c1481d2eb813a5743"
+      url "https://github.com/shayyz-code/json-firestore-seed/releases/download/v0.1.8/json-firestore-seed_0.1.8_darwin_amd64.tar.gz"
+      sha256 "2d582fd2a461b8bbb4e1573878fd451046ba7b3fe66ea24bd3202037a89b2b1a"
 
       define_method(:install) do
         bin.install "json-firestore-seed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shayyz-code/json-firestore-seed/releases/download/v0.1.7/json-firestore-seed_0.1.7_darwin_arm64.tar.gz"
-      sha256 "658bfcc8a7ab3bf07327a4c11758322f023b7362431ceb79f4754c3a12b84d2e"
+      url "https://github.com/shayyz-code/json-firestore-seed/releases/download/v0.1.8/json-firestore-seed_0.1.8_darwin_arm64.tar.gz"
+      sha256 "a33afdc0e8bc15f24cedb24c2bae0bdf4c389c8cec3e2adaa7156a2f6cb8b7d1"
 
       define_method(:install) do
         bin.install "json-firestore-seed"
@@ -29,8 +29,8 @@ class JsonFirestoreSeed < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shayyz-code/json-firestore-seed/releases/download/v0.1.7/json-firestore-seed_0.1.7_linux_amd64.tar.gz"
-      sha256 "3e950d218e357b948f0591b6eecb57886eeca3152e6d577ca3807cce18018a89"
+      url "https://github.com/shayyz-code/json-firestore-seed/releases/download/v0.1.8/json-firestore-seed_0.1.8_linux_amd64.tar.gz"
+      sha256 "2f1c1db004a3559725fdc06888d6e381b73b94bf80e56bd9cb8990b1c7437d19"
       define_method(:install) do
         bin.install "json-firestore-seed"
       end
