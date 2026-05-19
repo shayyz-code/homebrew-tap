@@ -1,30 +1,30 @@
 
-> @shayyz-code/codex-auth@0.1.4 generate:homebrew-formula
-> node npm/homebrew-formula.js v0.1.4 dist
+> @shayyz-code/codex-auth@0.2.1 generate:homebrew-formula
+> node npm/homebrew-formula.js v0.2.1 dist
 
 class CodexAuth < Formula
   desc "Manage named Codex auth snapshots"
   homepage "https://github.com/shayyz-code/codex-auth"
-  version "0.1.4"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.1.4/codex-auth-darwin-arm64"
-      sha256 "954a024baaf9e8a7e97f8fff5a440c414af9fa0387c54ad8c3e18804d210bcb4"
+      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.2.1/codex-auth-darwin-arm64"
+      sha256 "798bce725017301a539d96e09c6594f0ddac3fb63a09733f4a75756eb675e92f"
     else
-      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.1.4/codex-auth-darwin-amd64"
-      sha256 "e15fd0a105377ab4a1a80f8625ef2537937cf6e5d9e6a607e3403b318a838e18"
+      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.2.1/codex-auth-darwin-amd64"
+      sha256 "2ac9a3340f50d5948feec68cdc7053518a6e04ccc9d2035531544b9a93c5e05b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.1.4/codex-auth-linux-arm64"
-      sha256 "63f2657b807659f34874d5006d4a1fe5c27641a64a6b6ee71c8b559e162cec0f"
+      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.2.1/codex-auth-linux-arm64"
+      sha256 "d04b218db6d6321e0a03b9b28d67e2f90b7acc149037433b80b876e0c4144ecf"
     else
-      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.1.4/codex-auth-linux-amd64"
-      sha256 "07072b3f7eb5103f4dbb01aa9c0fbfbaee86efca1b0332aa070e8062af9c4b2d"
+      url "https://github.com/shayyz-code/codex-auth/releases/download/v0.2.1/codex-auth-linux-amd64"
+      sha256 "5464b206d1bd8fc7a57db4bd403f0d39d73f5c4c7c9518113b4f6780edb3e8ef"
     end
   end
 
